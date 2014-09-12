@@ -3,6 +3,7 @@
 
   <xacro:include filename="$(find schunk_description)/urdf/lwa4p/lwa4p.gazebo.xacro" />
   <xacro:include filename="$(find schunk_description)/urdf/lwa4p/lwa4p.transmission.xacro" />
+  <xacro:include filename="$(find schunk_description)/urdf/materials.urdf.xacro" />
 
   <xacro:macro name="schunk_lwa4p" params="parent name *origin">
 
