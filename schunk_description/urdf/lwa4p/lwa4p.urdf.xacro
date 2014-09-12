@@ -43,7 +43,6 @@
       <parent link="${name}_0_link"/>
       <child link="${name}_1_link"/>
       <axis xyz="0 0 1"/>
-      <calibration rising="${arm_1_ref}"/>
       <dynamics damping="10" />
       <limit effort="370" velocity="2.0" lower="-6.2831853" upper="6.2831853"/>
       <safety_controller k_position="20" k_velocity="50" soft_lower_limit="${-6.2831853 + 0.01}" soft_upper_limit="${6.2831853 - 0.01}" />
@@ -78,7 +77,6 @@
       <parent link="${name}_1_link"/>
       <child link="${name}_2_link"/>
       <axis xyz="0 0 1"/>
-      <calibration rising="${arm_2_ref}"/>
       <dynamics damping="10" />
       <limit effort="370" velocity="2.0" lower="-2.0943951" upper="2.0943951"/>
       <safety_controller k_position="20" k_velocity="50" soft_lower_limit="${-2.0943 + 0.01}" soft_upper_limit="${2.0943 - 0.01}" />
@@ -113,7 +111,6 @@
       <parent link="${name}_2_link"/>
       <child link="${name}_3_link"/>
       <axis xyz="0 0 1"/>
-      <calibration rising="${arm_3_ref}"/>
       <dynamics damping="5" />
       <limit effort="176" velocity="2.0" lower="-6.2831853" upper="6.2831853"/>
       <safety_controller k_position="20" k_velocity="25" soft_lower_limit="${-6.2831853 + 0.01}" soft_upper_limit="${6.2831853 - 0.01}" />
@@ -148,7 +145,6 @@
       <parent link="${name}_3_link"/>
       <child link="${name}_4_link"/>
       <axis xyz="0 0 1" />
-      <calibration rising="${arm_4_ref}"/>
       <dynamics damping="5" />
       <limit effort="176" velocity="2.0" lower="-2.0943951" upper="2.0943951"/>
       <safety_controller k_position="20" k_velocity="25" soft_lower_limit="${-2.0943951 + 0.01}" soft_upper_limit="${2.0943951 - 0.01}" />
@@ -183,7 +179,6 @@
       <parent link="${name}_4_link"/>
       <child link="${name}_5_link"/>
       <axis xyz="0 0 1" />
-      <calibration rising="${arm_5_ref}"/>
       <dynamics damping="5" />
       <limit effort="41.6" velocity="2.0" lower="-6.2831853" upper="6.2831853" />
       <safety_controller k_position="20" k_velocity="25" soft_lower_limit="${-6.2831853 + 0.01}" soft_upper_limit="${6.2831853 - 0.01}" />
@@ -218,7 +213,6 @@
       <parent link="${name}_5_link"/>
       <child link="${name}_6_link"/>
       <axis xyz="0 0 1" />
-      <calibration rising="${arm_6_ref}"/>
       <dynamics damping="5" />
       <limit effort="20.1" velocity="2.0" lower="-2.0943951" upper="2.0943951" />
       <safety_controller k_position="20" k_velocity="25" soft_lower_limit="${-2.0943951 + 0.01}" soft_upper_limit="${2.0943951 - 0.01}" />
