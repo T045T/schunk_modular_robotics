@@ -1,0 +1,14 @@
+<launch>
+  <param name="robot_description" 
+         command="$(find xacro)/xacro.py '$(find schunk_description)/urdf/lwa4p/test.urdf.xacro'" />
+  <node pkg="joint_state_publisher" type="joint_state_publisher" name="JSP">
+    <param name="use_gui" value="true" />
+  </node>
+  <node pkg="robot_state_publisher" type="robot_state_publisher" name="RSP">
+    
+  </node>
+  
+  <node pkg="tf2_web_republisher" type="tf2_web_republisher" name="tf2_web_republisher"/>
+  
+  <include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch" />
+</launch>
